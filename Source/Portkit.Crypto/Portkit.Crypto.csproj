@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="Base32.cs" />
     <Compile Include="IHashAlgorithm.cs" />
+    <Compile Include="IHashAlgorithmEx.cs" />
     <Compile Include="MacAlgorithmProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sha1.cs" />

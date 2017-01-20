@@ -1,6 +1,6 @@
 ﻿namespace Portkit.Crypto
 {
-    internal static class Base32
+    public static class Base32
     {
         private const byte BITS_IN_BLOCK = 5;
         private const byte BITS_IN_BYTE = 8;

@@ -111,7 +111,7 @@ namespace Portkit.Crypto
         /// <summary>
         /// Resets the SHA-1 generation hash buffer.
         /// </summary>
-        public void Reset()
+        public IHashAlgorithm Reset()
         {
             _count = 0;
             _messageCount = 0;
@@ -120,12 +120,8 @@ namespace Portkit.Crypto
             _hashBuffer[2] = 0x98badcfe;
             _hashBuffer[3] = 0x10325476;
             _hashBuffer[4] = 0xC3D2E1F0;
-        }
 
-        public static byte[] Compute(byte[] bytes)
-        {
-            var sha = new Sha1();
-            return sha.ComputeHash(bytes);
+            return this;
         }
 
         private byte[] GetSha1ByteArray()
